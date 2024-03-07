@@ -15,6 +15,9 @@ import Layout from '../../layouts/Layout.astro';
           to make it more responsive and accessible. I chose this site because I
           think, more often than not, the presentation of documentation for
           software engineering tools is neglected and has room for improvement.
+          While this site wasn't the worse instance I've ever seen of this, 
+          I still thought there was enough to improve (especially from an 
+          accessibility point of view)
         </p>
       </section>
       <img
@@ -23,6 +26,56 @@ import Layout from '../../layouts/Layout.astro';
       />
       <section>
         <h2>Problems with existing site</h2>
+
+        <h4>General</h4>
+        <ul>
+          <li>Not responsive to different screen sizes - same exact layout on desktop and mobile makes readability difficult (especially on mobile or slim desktop window)</li>
+          <li>Hard to find important interactive elements like search bar and field to sign up for announcements</li>
+          <li>Cluttered page - too much information all at once, text size is pretty small</li>
+          <li>Very minimal visual hierarchy</li>
+        </ul>
+
+        <h4>Navigation Menu</h4>
+        <ul>
+          <li>Non-standard location</li>
+          <li>Is at the end of HTML as opposed to the beginning (not convenient for screen readers)</li>
+          <li>Cluttered with sub-items</li>
+        </ul>
+
+        <h4>News Section</h4>
+        <ul>
+          <li>Sometimes items has additional description, sometimes not.</li>
+          <li>Dates not in consistent layout due to varying title lengths</li>
+        </ul>
+
+        <h3>Accessibility Report</h3>
+        <p>I ran <a href="https://wave.webaim.org/">WebAIM WAVE</a> (an accessibility evaluation tool) on the website and found several problems. The two text input fields (searchbar and email address subscription) were missing form labels for example, and the entire page layout used HTML tables. Both of these issues (along with a few more minor ones like missing semantic HTML page regions) can lead to problems with screen-readers. Overall, I agree with all the issues raised by this tool and intend to fix them.</p>
+      </section>
+
+      <section>
+        <h2>Prototyping</h2>
+        initial sketches
+        final sketch
+        low-fidelity wireframes
+        style guide
+        high-fidelity wireframes
+      </section>
+
+      <section>
+        <h2>Final Redesign</h2>
+        <p>The redesigned site is deployed <a href="https://mitchman215.github.io/GCC-Redesign/">here</a>!</p>
+        
+
+        
+        <h2>Lessons learned</h2>
+        <p>I learned how important it is to create wireframes - it was much easier to adjust the wireframe than the actual site. But at the same time, I found that my wireframes didn't anticipate everything the final site would need. For example, I didn't realize that my site needed a top-level heading until checking the WAVE accessibility report - but afterwards, it was a no-brainer.</p>
+        <p>I also learned that it is a challenge to create a site that is truly responsive in all environements. I noticed that the site would look slightly differently depending on which browser I used. Furthermore, I relied upon font / font sizes when deciding what the breakpoints would be for my site's responsive changes. However, this might pose an issue if a user has a browser setting that overrides font sizes. I believe the solution to this is using the right css unit, but that is something I didn't have time to investigate further.</p>
       </section>
     </main>
 </Layout>
+<style>
+  ul,
+	ol {
+		list-style: inside;
+	}
+</style>
