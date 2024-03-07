@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+	src: string;
+	alt: string;
+	caption: string | undefined;
+}
+
+let { src, alt, caption } = Astro.props;
+caption ??= alt
+---
+
+<!-- <Image src={src} alt={alt} /> -->

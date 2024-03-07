@@ -1,5 +1,18 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
+
+import originalPage from '../../images/gcc-redesign/original-page.png'
+import speedSketches from '../../images/gcc-redesign/speed-sketches.jpg'
+import finalSketch from '../../images/gcc-redesign/final-sketch.jpg'
+import loFiDesktop from '../../images/gcc-redesign/lo-fi-desktop.png'
+import loFiTablet from '../../images/gcc-redesign/lo-fi-tablet.png'
+import loFiMobile from '../../images/gcc-redesign/lo-fi-mobile.png'
+import styleGuide from '../../images/gcc-redesign/style-guide.png'
+import hiFiDesktop from '../../images/gcc-redesign/hi-fi-desktop.png'
+import hiFiTablet from '../../images/gcc-redesign/hi-fi-tablet.png'
+import hiFiMobile from '../../images/gcc-redesign/hi-fi-mobile.png'
+import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
 ---
 
 <Layout title='Responsive Redesign Case Study'>
@@ -20,10 +33,7 @@ import Layout from '../../layouts/Layout.astro';
           accessibility point of view)
         </p>
       </section>
-      <img
-        src="assets/existing-site.png"
-        alt="Screenshot of current GCC homepage"
-      />
+      <Image src={originalPage} alt="Original GCC homepage" />
       <section>
         <h2>Problems with existing site</h2>
 
@@ -54,16 +64,35 @@ import Layout from '../../layouts/Layout.astro';
 
       <section>
         <h2>Prototyping</h2>
-        initial sketches
-        final sketch
-        low-fidelity wireframes
-        style guide
-        high-fidelity wireframes
+
+        <h3>Sketches</h3>
+        <div class="side-by-side-images">
+          <Image src={speedSketches} alt="Nine hastily-drawn layout sketches" />
+          <Image src={finalSketch} alt="A slightly more detailed page layout sketch" />
+        </div>
+        
+        <h3>Low-Fidelity Designs</h3>
+        <div class="wireframe-group">
+          <Image src={loFiDesktop} alt="low-fidelity layout design for desktop" />
+          <Image src={loFiTablet} alt="low-fidelity layout design for tablet" />
+          <Image src={loFiMobile} alt="low-fidelity layout design for mobile" />
+        </div>
+
+        <h3>Style Guide</h3>
+        <Image src={styleGuide} alt="guide showing styles for re-used components like buttons and icons" />
+
+        <h3>High-Fidelity Mockups</h3>
+        <div class="wireframe-group">
+          <Image src={hiFiDesktop} alt="high-fidelity mockup for desktop" />
+          <Image src={hiFiTablet} alt="high-fidelity mockup for tablet" />
+          <Image src={hiFiMobile} alt="high-fidelity mockup for mobile" />
+        </div>
       </section>
 
       <section>
         <h2>Final Redesign</h2>
         <p>The redesigned site is deployed <a href="https://mitchman215.github.io/GCC-Redesign/">here</a>!</p>
+        <Image src={finalRedesign} alt="Redesigned GCC homepage" />
         
 
         
@@ -78,4 +107,21 @@ import Layout from '../../layouts/Layout.astro';
 	ol {
 		list-style: inside;
 	}
+
+  main {
+    margin: 3rem;
+  }
+
+  img {
+    display: inline;
+    border: 1px solid;
+  }
+
+  .side-by-side-images {
+    display: flex;
+    > img {
+      width: 50%;
+      height: 50%;
+    }
+  }
 </style>
