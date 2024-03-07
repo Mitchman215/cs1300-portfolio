@@ -1,3 +1,8 @@
+---
+layout: ../../layouts/CaseStudyLayout.astro
+name: Responsive Redesign
+---
+
 ## Summary
 I sought to redesign the home page for the [GCC (GNU Compiler Collection) project](https://gcc.gnu.org/) to make it more responsive and accessible. I chose this site because I think, more often than not, documentation for software engineering tools is often neglected and has room for improvement.
 
