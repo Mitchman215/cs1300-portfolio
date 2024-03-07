@@ -73,8 +73,9 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
         
         <h3>Low-Fidelity Designs</h3>
         <div class="wireframe-group">
-          <Image src={loFiDesktop} alt="low-fidelity layout design for desktop" />
-          <Image src={loFiTablet} alt="low-fidelity layout design for tablet" />
+            <Image src={loFiDesktop} alt="low-fidelity layout design for desktop" />
+            <Image src={loFiTablet} alt="low-fidelity layout design for tablet" />
+
           <Image src={loFiMobile} alt="low-fidelity layout design for mobile" />
         </div>
 
@@ -83,8 +84,8 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
 
         <h3>High-Fidelity Mockups</h3>
         <div class="wireframe-group">
-          <Image src={hiFiDesktop} alt="high-fidelity mockup for desktop" />
-          <Image src={hiFiTablet} alt="high-fidelity mockup for tablet" />
+            <Image src={hiFiDesktop} alt="high-fidelity mockup for desktop" />
+            <Image src={hiFiTablet} alt="high-fidelity mockup for tablet" />
           <Image src={hiFiMobile} alt="high-fidelity mockup for mobile" />
         </div>
       </section>
@@ -119,7 +120,16 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
 
   .side-by-side-images {
     display: flex;
-    > img {
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .wireframe-group {
+    display: flex;
+    flex-basis: 100%;
+    img {
       width: 50%;
       height: 50%;
     }
