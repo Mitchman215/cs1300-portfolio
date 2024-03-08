@@ -34,6 +34,7 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
         </p>
       </section>
       <Image src={originalPage} alt="Original GCC homepage" />
+      <small>The original page</small>
       <section>
         <h2>Problems with existing site</h2>
 
@@ -74,10 +75,12 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
         
         <h3>Low-Fidelity Designs</h3>
         <div class="wireframe-group">
-            <Image src={loFiDesktop} alt="low-fidelity layout design for desktop" />
-            <Image src={loFiTablet} alt="low-fidelity layout design for tablet" />
-
-          <Image src={loFiMobile} alt="low-fidelity layout design for mobile" />
+          <Image src={loFiDesktop} alt="low-fidelity wireframe for desktop" />
+          <small>Low-Fi desktop wireframe</small>
+          <Image src={loFiTablet} alt="low-fidelity wireframe for tablet" />
+          <small>Low-Fi tablet wireframe</small>
+          <Image src={loFiMobile} alt="low-fidelity wireframe for mobile" />
+          <small>Low-Fi mobile wireframe</small>
         </div>
         <a href="https://www.figma.com/file/GARnr2PGH12Ou3h66dZQ9e/%5BGCC-Responsive-Redesign%5D-Lo-Fi-mockups?type=design&node-id=0%3A1&mode=design&t=oXdP9drr4pHvZSnX-1">Figma link</a>
         <p>Next I came up with some low-fidelity wireframes that would demonstrate the desired layout of the page with 3 different screen sizes. I also annotated these wireframes to show how they addressed the issues with the original webpage that I noted earlier.</p>
@@ -90,9 +93,12 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
 
         <h3>High-Fidelity Mockups</h3>
         <div class="wireframe-group">
-            <Image src={hiFiDesktop} alt="high-fidelity mockup for desktop" />
-            <Image src={hiFiTablet} alt="high-fidelity mockup for tablet" />
+          <Image src={hiFiDesktop} alt="high-fidelity mockup for desktop" />
+          <small>High-Fi desktop mockup</small>
+          <Image src={hiFiTablet} alt="high-fidelity mockup for tablet" />
+          <small>High-Fi tablet mockup</small>
           <Image src={hiFiMobile} alt="high-fidelity mockup for mobile" />
+          <small>High-Fi mobile mockup</small>
         </div>
         <a href="https://www.figma.com/file/IGPqJX5DEQVxxqbsyIrOLy/%5BGCC-Responsive-Redesign%5D-High-Fi-Mockups?type=design&node-id=0%3A1&mode=design&t=LptneYUKUrt7MAfR-1">Figma Link</a>
         <p>These high-fidelity mockups combine the style guide with the earlier wireframes to produce a finalized design. It has more details like spacing, typography, and colors carefully implemented</p>
@@ -112,17 +118,15 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
     </main>
 </Layout>
 <style>
+  body {
+    font-size: 1.125rem;
+  }
   ul,
 	ol {
 		list-style: inside;
 	}
 
-  main {
-    margin: 3rem;
-  }
-
   img {
-    display: inline;
     border: 1px solid;
   }
 
@@ -134,12 +138,24 @@ import finalRedesign from '../../images/gcc-redesign/redesigned-page.png'
     }
   }
 
+  small {
+    display: block;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    margin-top: 1rem;
+  }
+  main {
+    margin-bottom: 5rem;
+  }
+
   .wireframe-group {
     display: flex;
-    flex-basis: 100%;
-    img {
-      width: 50%;
-      height: 50%;
+    flex-direction: column;
+    align-items: center;
+    small {
+      margin-bottom: 0.875rem;
     }
   }
 </style>
