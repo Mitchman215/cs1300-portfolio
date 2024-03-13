@@ -6,6 +6,44 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.name} Case Study`}>
-  <h1>{frontmatter.name}</h1>
-  <slot />
+  <main>
+    <slot />
+
+  </main>
 </Layout>
+<style is:global>
+  /* Typography */
+  body {
+    font-size: 1.125rem;
+  }
+  ul,
+	ol {
+		list-style: inside;
+	}
+
+  /* Images */
+  img {
+    border: 1px solid;
+    margin: 0 auto;
+    /* Image captions */
+    + em {
+      font-size: 1rem;
+      display: block;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  /* Spacing */
+  h1, h2 {
+    margin-top: 1rem;
+  }
+  h3 {
+    margin-top: 0.25rem;
+  }
+  main {
+    margin-bottom: 5rem;
+  }
+
+
+</style>
