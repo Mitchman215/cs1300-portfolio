@@ -39,7 +39,7 @@ The reasoning behind this alternative hypothesis is that version B has horizonta
 
 #### Results
 
-![Results of running the Chi-Squared test](../../images/ab-testing/chi-squared-result.png)
+<!-- ![Results of running the Chi-Squared test](../../images/ab-testing/chi-squared-result.png) -->
 
 The difference in misclick rate between the two versions is **not** statistically significant - we fail to reject the null hypothesis. This is because the test had a p-value of 0.378, which is not below the 0.05 threshold required for significance. In other words, there is a 37.8% chance the differences we observed in the misclick rate between Version A and B are due to chance. Therefore, my prediction was wrong. Also relevant is that our test had 1 degree of freedom and had a chi-squared statistic of 0.776.
 
@@ -57,9 +57,9 @@ The reasoning behind this alternative hypothesis is that the darker text is more
 
 #### Results
 
-![Results of running the one-tailed T-test](../../images/ab-testing/one-tail-t-result.png)
+<!-- ![Results of running the one-tailed T-test](../../images/ab-testing/one-tail-t-result.png)
 
-Note: due to the way the calculator is set up, Sample A corersponds to Version B and Sample B corresponds to Version A. This was necessary to match my alternative hypothesis
+Note: due to the way the calculator is set up, Sample A corersponds to Version B and Sample B corresponds to Version A. This was necessary to match my alternative hypothesis -->
 
 The time spent on the page is **not** statistically different between Version A and Version B - we fail to reject the null hypothesis. This is evident as we have a p-value of 0.192, which is above the 0.05 threshold for establishing significance. In other words, there is roughly a 19.2% chance that the difference we do observe between Versions A and B are simply due to chance. Also relevant to the calculation of the p-value was the T-score of -0.878 and 43.6 degrees of freedom.
 
@@ -79,7 +79,7 @@ The reasoning behind this alternative hypothesis would be that the increased rea
 
 #### Results
 
-![Results of running the two-tailed T-test](../../images/ab-testing/two-tail-t-result.png)
+<!-- ![Results of running the two-tailed T-test](../../images/ab-testing/two-tail-t-result.png) -->
 
 The time before first click is **not** statistically different between Version A and Version B - we fail to reject the null hypothesis. This is evident as we have a p-value of 0.642, which is above the 0.05 threshold for establishing significance. In other words, there is roughly a 64.2% chance that the difference we do observe between Versions A and B are simply due to chance. Also relevant to the calculation of the p-value was the T-score of -0.468 and 48.6 degrees of freedom.
 
