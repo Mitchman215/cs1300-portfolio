@@ -16,12 +16,14 @@ Before creating the web app, I conducted a competitive analysis of several exist
 | Factors | GitHub | Coolors | Spotify |
 | ------- | ------ | ------- | ------- |
 | Save without account | ❌ | ❌ | ❌ |
-| Save to fully customized lists | ✅ | ❌ | ✅ (playlists) |
-| Favorite different categories of things | ❌ | ✅ (colors, palettes, etc.) | ✅ (songs and podcasts) |
+| Save to different custom-named lists | ✅ | ❌ | ✅ (playlists) |
+| Save different categories of things to preset lists | ❌ | ✅ (colors, palettes, etc.) | ✅ (songs and podcasts) |
 | Other people can see your favorites | ✅ | ❌ | ✅ (only playlists) |
 | Can control visibility of favorites list | ❌ | ❌ | ✅ (only playlists) |
 | Can search / filter favorites list | ✅ | ✅ | ✅ |
-| Can sort favorites list | ✅ | ❌ | ✅ |
+| Can sort favorites list by pre-defined attributes | ✅ | ❌ | ✅ |
+| Can re-arrange list items with fully custom order | ❌ | ❌ | ✅ (only playlists) |
+| Different ways of viewing list | ❌ | ❌ | ✅ (compact vs list view) |
 
 ### Summary
 
