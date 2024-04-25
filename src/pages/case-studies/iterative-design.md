@@ -15,7 +15,7 @@ We were tasked with improving and expanding this entire sequence, including find
 
 ## Initial Sketches
 
-To generate ideas, each team member sketched 2 different possible flows of an improved onboarding sequence. The full sketches are viewable as pdfs separated by each member avaiable at the following links: [Emily](../iterative-design/sketches/emily-sketches.pdf), [Futen](../iterative-design/sketches/futen-sketches.pdf), [Joel](../iterative-design/sketches/joel-sketches.pdf), and [Mitchell](/iterative-design/sketches/mitchell-sketches.pdf). A few screenshots are included below to capture their essence.
+To generate ideas, each team member sketched 2 different possible flows of an improved onboarding sequence. The full sketches are viewable as pdfs separated by each member avaiable at the following links: [Emily](/cs1300-portfolio/sketches/emily-sketches.pdf), [Futen](../iterative-design/sketches/futen-sketches.pdf), [Joel](../iterative-design/sketches/joel-sketches.pdf), and [Mitchell](/iterative-design/sketches/mitchell-sketches.pdf). A few screenshots are included below to capture their essence.
 
 ![sample of emily's sketches](../../images/emily-sample.jpg)
 
