@@ -17,13 +17,13 @@ We were tasked with improving and expanding this entire sequence, including find
 
 To generate ideas, each team member sketched 2 different possible flows of an improved onboarding sequence. The full sketches are viewable as pdfs separated by each member avaiable at the following links: [Emily](../iterative-design/sketches/emily-sketches.pdf), [Futen](../iterative-design/sketches/futen-sketches.pdf), [Joel](../iterative-design/sketches/joel-sketches.pdf), and [Mitchell](/iterative-design/sketches/mitchell-sketches.pdf). A few screenshots are included below to capture their essence.
 
-![sample of emily's sketches](../images/emily-sample.jpg)
+![sample of emily's sketches](../../images/emily-sample.jpg)
 
-![sample of futen's sketches](../images/futen-sample.jpg)
+![sample of futen's sketches](../../images/futen-sample.jpg)
 
-![sample of joel's sketches](/iterative-design/images/joel-sample.jpg)
+![sample of joel's sketches](../../images/joel-sample.jpg)
 
-![sample of mitchell's sketches](/iterative-design/images/mitchell-sample.jpg)
+![sample of mitchell's sketches](../../images/mitchell-sample.jpg)
 
 There were quite a few aspects that our sketches differed on. For example, we came up with different ideas of how and where to present the marketing survey - some integrated it into the terminal experience directly and others kept it as a separate modal. We also differed in the medium we would use to introduce users to Warp's features, for example having it as a video walkthrough on the download page vs a more interactive tutorial within the app.
 
