@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/CaseStudyLayout.astro
+layout: ../../layouts/CaseStudyLayout.astro
 name: Iterative Design
 ---
 
