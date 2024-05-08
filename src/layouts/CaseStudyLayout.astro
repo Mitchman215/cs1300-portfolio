@@ -1,6 +1,5 @@
-
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "./BaseLayout.astro"
 
 const { frontmatter } = Astro.props;
 ---
@@ -67,5 +66,9 @@ const { frontmatter } = Astro.props;
 
   th, tbody tr:nth-child(even) {
     background-color: rgb(225, 225, 225, 0.8);
+  }
+
+  main {
+    margin-bottom: 2rem
   }
 </style>

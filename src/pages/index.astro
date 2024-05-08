@@ -1,12 +1,21 @@
 ---
 import Card from '../components/Card.astro';
-import Layout from '../layouts/Layout.astro';
+import CaseStudyCard from '../components/CaseStudyCard.astro';
+import Layout from '../layouts/BaseLayout.astro';
+
+import redesignThumbnail from "../images/gcc-redesign/final-deployed.png"
 ---
 
 <Layout title="Mitchell's CS1300 Portfolio">
   <main>
     <h1>Welcome to my portfolio!</h1>
-    <ul role="list" class="link-card-grid">
+    <ul role="list" class="case-studies">
+			<CaseStudyCard
+				href="/cs1300-portfolio/case-studies/responsive-redesign"
+				title="Responsive Redesign"
+				thumbnail={redesignThumbnail}
+				summary="placeholder text: Non laborum velit Lorem culpa et ex quis exercitation excepteur ut ex pariatur sunt labore. Dolor incididunt culpa commodo minim proident aliqua irure cupidatat laborum aliquip cillum. Sunt ad elit anim sit ut eu. Nulla minim nostrud consectetur dolore adipisicing adipisicing officia aliquip ad ad magna."
+				/>
 			<Card
 				href="/cs1300-portfolio/case-studies/responsive-redesign"
 				title="Responsive Redesign"
@@ -32,6 +41,7 @@ import Layout from '../layouts/Layout.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
+		color: 
 		/* color: white; */
 		font-size: 20px;
 		line-height: 1.6;
@@ -77,10 +87,8 @@ import Layout from '../layouts/Layout.astro';
 	.instructions strong {
 		color: rgb(var(--accent-light));
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	.case-studies {
+		display: flex;
+		flex-direction: column;
 	}
 </style>

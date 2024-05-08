@@ -4,14 +4,14 @@ name: Responsive Redesign
 role: Frontend web developer, designer
 timeline: 3 weeks
 tools: HTML, CSS, Figma
-image: ../../images/gcc-redesign/redesigned-page.png
+image: ../../images/gcc-redesign/final-deployed.png
 ---
 
 # Responsive Redesign
 
 ## Overview
 
-GCC (GNU Compiler Collection) is a collection of compilers and development tools for a variety of lower-level programming langues like C. I sought to redesign the [home page for this project](https://gcc.gnu.org/) to make it more readable, responsive, and accessible. The presentation and documentation for programmer-tooling is often an after-thought, especially for older tooling like GCC. so I wanted to give some much-needed attention to this area.
+GCC (GNU Compiler Collection) is a collection of compilers and development tools for a variety of lower-level programming langues like C. I sought to redesign the [home page for this project](https://gcc.gnu.org/) to make it more readable, responsive, and accessible. The presentation and documentation for programmer-tooling is often an after-thought, especially for older tooling like GCC. So I wanted to give some much-needed attention to this area.
 
 ## Issues with the existing site
 
@@ -45,7 +45,7 @@ Next I designed and annotated low-fidelity wireframes, showing how my design cho
 
 The final mockup added color and typography to the design.
 
-![high-fidelity mockup for desktop](https://lh7-us.googleusercontent.com/2RZhqjIltB2nOBejvp5i4D6D59NdtsN8cFzminY1kTOJBMSLfHq-fZKGHO4t1QxfAD_dhtaUdL6hb3jbWjJg-Z5tSoLSIdDvjhDZrK2N-gD-mxFG23XMeAk0JIHQxAWyqY-tEC37jNAvfrOhmMBHZOQ)
+![high-fidelity mockup for desktop](../../images/gcc-redesign/hi-fi-desktop.png)
 
 ## Final Product
 

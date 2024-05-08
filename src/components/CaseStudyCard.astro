@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  href: string;
+	title: string;
+	thumbnail: ImageMetadata;
+	summary: string;
+}
+
+const { href, title, thumbnail, summary } = Astro.props;
+---
+
+<li class="case-study-card">
+	<a href={href}>
+		<h2>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+    <div class="content">
+      <Image src={thumbnail} alt={`${title} thumbnail`} height={300} />
+      <p>{summary}</p>
+    </div>
+	</a>
+</li>
+
+<style>
+  .case-study-card {
+    padding: 1rem;
+    background-color: gainsboro;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+    a {
+      text-decoration: none;
+    }
+  }
+  .content {
+    display: flex;
+    gap: 10px
+
+  }
+</style>
