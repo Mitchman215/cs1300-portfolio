@@ -1,44 +1,36 @@
 ---
 import Card from '../components/Card.astro';
 import CaseStudyCard from '../components/CaseStudyCard.astro';
-import Layout from '../layouts/BaseLayout.astro';
+import Layout from '../layouts/PortfolioLayout.astro';
 
 import redesignThumbnail from "../images/gcc-redesign/final-deployed.png"
 ---
 
 <Layout title="Mitchell's CS1300 Portfolio">
-  <main>
-    <h1>Welcome to my portfolio!</h1>
-    <ul role="list" class="case-studies">
-			<CaseStudyCard
+	<h1>Welcome to my portfolio!</h1>
+	<ul role="list" class="case-studies">
+		<CaseStudyCard
 				href="/cs1300-portfolio/case-studies/responsive-redesign"
 				title="Responsive Redesign"
 				thumbnail={redesignThumbnail}
 				summary="placeholder text: Non laborum velit Lorem culpa et ex quis exercitation excepteur ut ex pariatur sunt labore. Dolor incididunt culpa commodo minim proident aliqua irure cupidatat laborum aliquip cillum. Sunt ad elit anim sit ut eu. Nulla minim nostrud consectetur dolore adipisicing adipisicing officia aliquip ad ad magna."
 				/>
-			<Card
-				href="/cs1300-portfolio/case-studies/responsive-redesign"
-				title="Responsive Redesign"
-				body="I redesigned an the home page for GCC to be more responsive"
-			/>
-			<Card
-				href="/cs1300-portfolio/case-studies/development"
-				title="Development"
-				body="I created a React App to track welcome bonuses for bank accounts"
-			/>
-			<Card
-				href="#"
-				title="Placeholder"
-				body="Placeholder"
-			/>
-		</ul>
-  </main>
+		<Card
+			href="/cs1300-portfolio/case-studies/development"
+			title="Development"
+			body="I created a React App to track welcome bonuses for bank accounts"
+		/>
+		<Card
+			href="#"
+			title="Placeholder"
+			body="Placeholder"
+		/>
+	</ul>
 </Layout>
 
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: 
