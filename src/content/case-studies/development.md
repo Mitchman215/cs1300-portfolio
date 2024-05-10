@@ -3,7 +3,8 @@ name: Development
 role: [Frontend web developer]
 timeline: 2 weeks
 tools: [React, Typescript, Material UI]
-image: ../../images/gcc-redesign/final-site.png
+thumbnail: ../../images/development/final-site.png
+summary: blank
 ---
 
 # Development

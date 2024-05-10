@@ -1,24 +1,25 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import { Image } from 'astro:assets';
 
+
 interface Props {
-  href: string;
-	title: string;
-	thumbnail: ImageMetadata;
-	summary: string;
+  study: CollectionEntry<'case-studies'>
 }
 
-const { href, title, thumbnail, summary } = Astro.props;
+const { name, thumbnail, summary } = Astro.props.study.data;
+
+const href = `/cs1300-portfolio/case-studies/${Astro.props.study.slug}`
 ---
 
 <li class="case-study-card">
 	<a href={href}>
 		<h2>
-			{title}
+			{name}
 			<span>&rarr;</span>
 		</h2>
     <div class="content">
-      <Image src={thumbnail} alt={`${title} thumbnail`} height={300} />
+      {thumbnail && <Image src={thumbnail} alt={`${name} thumbnail`} height={250} />}
       <p>{summary}</p>
     </div>
 	</a>
@@ -34,6 +35,7 @@ const { href, title, thumbnail, summary } = Astro.props;
       text-decoration: none;
     }
   }
+
   .content {
     display: flex;
     gap: 10px

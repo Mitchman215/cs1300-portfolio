@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content'
+import CaseStudyCard from './CaseStudyCard.astro'
+
+const studies = await getCollection('case-studies')
+---
+
+<section class="case-studies">
+  <h2>Case Studies</h2>
+  <ul role="list" class="case-studies-list">
+    {studies.map(study => (
+      <CaseStudyCard study={study} />
+    ))}
+  </ul>
+</section>
+
+<style>
+	.case-studies {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.case-studies-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+</style>

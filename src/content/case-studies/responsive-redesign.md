@@ -3,7 +3,8 @@ name: Responsive Redesign
 role: [Frontend web developer, designer]
 timeline: 3 weeks
 tools: [HTML, CSS, Figma]
-image: ../../images/gcc-redesign/final-deployed.png
+thumbnail: ../../images/gcc-redesign/final-deployed.png
+summary: I redesigned the homepage for gcc.gnu.org to be more readable, responsive, and accessible.
 ---
 
 # Responsive Redesign
