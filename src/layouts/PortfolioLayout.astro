@@ -1,0 +1,51 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+
+interface Props {
+	title: string;
+}
+
+const title = Astro.props.title ?? "Mitchell's portfolio";
+---
+
+<BaseLayout title={title}>
+  <Header />
+  <main>
+    <slot />
+  </main>
+</BaseLayout>
+<style is:global>
+  :root {
+    /* Colors */
+    --clr-white: #FFFCE8;
+    --clr-surface: hsl(220, 37%, 97%);
+    --clr-text: #1A1F16; 
+
+    --clr-blue: #92AFD7;
+    --clr-grey: #5a7684;
+
+    /* Typography */
+    --ff-base: "IBM Plex Sans", sans-serif;
+    --ff-accent: "Young Serif", serif;
+
+		--fw-regular: 500;
+    --fw-bold: 600;
+    --fw-black: 700;
+
+    /* font sizes */
+    --fs-300: 1rem;
+    --fs-400: 1.125rem;
+    --fs-500: 1.375rem;
+    --fs-600: 1.75rem;
+    --fs-700: 2.25rem;
+	}
+
+  body {
+    background: var(--clr-surface);
+    color: var(--clr-text);
+    font-family: var(--ff-base);
+    font-size: var(--fs-300);
+    padding: 1rem;
+  }
+</style>
