@@ -5,7 +5,7 @@ import CaseStudyCard from './CaseStudyCard.astro'
 const studies = await getCollection('case-studies')
 ---
 
-<section class="case-studies">
+<section class="case-studies" id="case-studies">
   <h2>Case Studies</h2>
   <ul role="list" class="case-studies-list">
     {studies.map(study => (

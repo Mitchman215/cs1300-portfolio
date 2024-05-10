@@ -8,19 +8,21 @@ import AllCaseStudies from '../components/AllCaseStudies.astro';
 ---
 
 <Layout title="Mitchell's CS1300 Portfolio">
-	<section class="introduction">
-		<div class="introduction-text">
-			<h2>Hey I'm Mitchell.</h2>
-			<p>
-				Full-stack software engineer with an eye for detail and quality. 
-				Able to don many different hats, from designing web interfaces to implementing distributed communication processes. 
-				Always learning.
-			</p>
-		</div>
-		<Image alt="Headshot of Mitchell" src={mitchell} width={300} />
-	</section>
-	
-	<AllCaseStudies />
+	<main>
+		<section class="introduction">
+			<div class="introduction-text">
+				<h2>Hey I'm Mitchell.</h2>
+				<p>
+					Full-stack software engineer with an eye for detail and quality. 
+					Able to don many different hats, from designing web interfaces to implementing distributed communication processes. 
+					Always learning.
+				</p>
+			</div>
+			<Image alt="Headshot of Mitchell" src={mitchell} width={300} />
+		</section>
+		
+		<AllCaseStudies />
+	</main>
 </Layout>
 
 <style>

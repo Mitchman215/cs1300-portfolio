@@ -11,9 +11,7 @@ const title = Astro.props.title ?? "Mitchell's portfolio";
 
 <BaseLayout title={title}>
   <Header />
-  <main>
-    <slot />
-  </main>
+  <slot />
 </BaseLayout>
 <style is:global>
   :root {
