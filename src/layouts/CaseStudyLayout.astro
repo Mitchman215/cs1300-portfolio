@@ -5,16 +5,12 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={`${frontmatter.name} Case Study`}>
-  <main>
-    <slot />
-  </main>
+  <slot />
 </Layout>
 
 <style is:global>
+
   /* Typography */
-  body {
-    font-size: 1.125rem;
-  }
   ul,
 	ol {
 		list-style: inside;
@@ -34,6 +30,10 @@ const { frontmatter } = Astro.props;
   }
 
   /* Spacing */
+  main {
+    width: min(75ch, 100% - 4rem);
+    margin-inline: auto;
+  }
   h1, h2 {
     margin-top: 1rem;
   }

@@ -1,6 +1,6 @@
 ---
 name: Development
-role: [Frontend web developer]
+role: Frontend web developer
 timeline: 2 weeks
 tools: [React, Typescript, Material UI]
 thumbnail: ../../images/development/final-site.png
