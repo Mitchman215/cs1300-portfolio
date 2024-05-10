@@ -1,5 +1,5 @@
 ---
-import Layout from "./BaseLayout.astro"
+import Layout from "./PortfolioLayout.astro"
 
 const { frontmatter } = Astro.props;
 ---
@@ -7,9 +7,9 @@ const { frontmatter } = Astro.props;
 <Layout title={`${frontmatter.name} Case Study`}>
   <main>
     <slot />
-
   </main>
 </Layout>
+
 <style is:global>
   /* Typography */
   body {

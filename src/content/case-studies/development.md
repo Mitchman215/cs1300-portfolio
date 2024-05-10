@@ -1,6 +1,9 @@
 ---
-layout: ../../layouts/CaseStudyLayout.astro
 name: Development
+role: [Frontend web developer]
+timeline: 2 weeks
+tools: [React, Typescript, Material UI]
+image: ../../images/gcc-redesign/final-site.png
 ---
 
 # Development

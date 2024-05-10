@@ -1,9 +1,8 @@
 ---
-layout: ../../layouts/CaseStudyLayout.astro
 name: Responsive Redesign
-role: Frontend web developer, designer
+role: [Frontend web developer, designer]
 timeline: 3 weeks
-tools: HTML, CSS, Figma
+tools: [HTML, CSS, Figma]
 image: ../../images/gcc-redesign/final-deployed.png
 ---
 
