@@ -23,7 +23,7 @@ Before creating the web app, I conducted a competitive analysis of several exist
 
 ### Other Bank Bonus Sites
 
-I looked at a variety of other sites that would be "competitors" to my app. I found that the best ones also had filtering / searching functionality - others that consisted of static long lists were difficulat to traverse. Interestingly, I could not find any bank bonus site that allowed users to save particular offers - this presents a real opportunity for my app to distinguish itself in providing novel functionality.
+I looked at a variety of other sites that would be "competitors" to my app. I found that the best ones also had filtering / searching functionality - others that consisted of static long lists were difficult to traverse. Interestingly, I could not find any bank bonus site that allowed users to save particular offers - this presents a real opportunity for my app to distinguish itself in providing novel functionality.
 
 <div class="side-by-side-images">
 

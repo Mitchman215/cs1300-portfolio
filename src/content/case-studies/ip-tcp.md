@@ -4,7 +4,7 @@ role: Backend system developer
 timeline: 2 months
 tools: [Go, Wireshark]
 thumbnail: ../../images/ip-tcp/sample-network.png
-summary: On a team of 2, I implemented fundamental internet communication protocols from scratch.
+summary: I implemented fundamental internet communication protocols from scratch.
 ---
 
 # IP / TCP Stack
@@ -66,8 +66,8 @@ Throughout the process, my teammate and I worked closely together - we wanted to
 
 ## Lessons learned
 
-- Deep understanding of how the internet works at a low-level
-- Importance of frequent testing and documentation
-- How to effectively work on a team in a large codebase
-- New appreciation for creating just the right-level of abstractions
-- Proficiency programming and debugging in a concurrent environment
+1) Deep understanding of how the internet works at a low-level
+2) Importance of frequent testing and documentation
+3) How to effectively work on a team in a large codebase
+4) New appreciation for creating just the right-level of abstractions
+5) Proficiency programming and debugging in a concurrent environment
