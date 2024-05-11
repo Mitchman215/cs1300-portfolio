@@ -11,7 +11,9 @@ summary: On a team of 2, I implemented fundamental internet communication protoc
 
 ## Overview
 
-The Internet Protocol (IP) and Transmission Control Protocol (TCP) are procedures that make up the backbone of the internet. They define a standard for how information is exchanged across the world with reliability, resiliency, and efficiency built-in. IP and TCP are almost certainly the protocols used to transport the data that makes up this webpage to your computer, allowing you to read this very text! In an effort to better understand these fundamental protocols, I collaborated with a partner to implement both of them from scratch using the Go programming language.
+The Internet Protocol (IP) and Transmission Control Protocol (TCP) are procedures that make up the backbone of the internet. They define a standard for how information is efficiently and reliably exchanged across the world. IP and TCP are almost certainly the protocols used to transport the data that makes up this webpage to your computer, allowing you to read this very text!
+
+In an effort to better understand these fundamental protocols and practice my system programming skills, I collaborated with a partner to implement both protocols from scratch using the Go programming language.
 
 ## Technical specifications
 
@@ -29,7 +31,7 @@ TCP then builds on-top of IP to allow larger "streams" of data to be transmitted
 
 ## The Process
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
 <div>
 
 ### Weeks 1-2: Research and set-up
@@ -48,7 +50,7 @@ We first started with the simplest case - 2 devices directly communicating. Then
 
 ### Weeks 5-6: Start implementing TCP
 
-After finishing IP, we shifted our focus to building out TCP. We had to deal with several nasty and hard-to-reproduce bugs. In addition to the manual testing we were previously doing, we wrote some automated test suites to help us localize the issues and to ensure future changes wouldn't re-introduce bugs.
+After finishing IP, we shifted our focus to building out TCP. We had to deal with several nasty and hard-to-reproduce bugs. In addition to the manual testing we were previously doing, I wrote some automated test suites to help us localize the issues and to ensure future changes wouldn't re-introduce bugs.
 
 </div>
 <div>
@@ -60,9 +62,12 @@ We solved all the previous bugs and finished implementing TCP, accounting for as
 </div>
 </div>
 
+Throughout the process, my teammate and I worked closely together - we wanted to ensure we both understood every line of code in the codebase regardless of who originally wrote it. Thus we usually opted to pair-program, but also didn't shy away from splitting up work when necessary to get things done.
+
 ## Lessons learned
 
-- How the internet works at a very low-level
+- Deep understanding of how the internet works at a low-level
 - Importance of frequent testing and documentation
 - How to effectively work on a team in a large codebase
 - New appreciation for creating just the right-level of abstractions
+- Proficiency programming and debugging in a concurrent environment
